@@ -3,18 +3,12 @@ import styled from 'styled-components';
 
 const MainHeader = styled.header`
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
 `;
 
 const Container = styled.div`
-  margin: 5px 40px 50px 40px;
+  margin: 10px 40px 50px 40px;
 `;
 
 const Logo = styled.h1`
@@ -26,14 +20,10 @@ const Logo = styled.h1`
 
 const HeaderLink = styled(NavLink)`
   color: #212529;
-  margin: 0 30px;
+  margin-left: 50px;
   text-align: center;
   text-transform: lowercase;
   display: inline-block;
-
-  @media (max-width: 768px) {
-    margin-right: 50px;
-  }
 
   &:after {
     content: '';
@@ -69,9 +59,6 @@ const Header = () => {
       </Container>
       <Container>
         <ul>
-          <HeaderLink to="/" end>
-            Home
-          </HeaderLink>
           <HeaderLink to="/products">Products</HeaderLink>
           <HeaderLink to="/about">About</HeaderLink>
           <HeaderLink to="/contact">Contact</HeaderLink>

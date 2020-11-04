@@ -10,20 +10,14 @@ const MainFooter = styled.footer`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: #dadada;
   text-align: center;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
+  margin-top: 50px;
 `;
 
 const Container = styled.div`
-  margin: 10px 30px;
-  @media (max-width: 768px) {
-    margin: 5px 0;
-  }
+  margin: 10px 50px;
 `;
 
 const Logo = styled.h1`
@@ -40,7 +34,7 @@ const Icon = styled.a`
   color: #212529;
   transition: 280ms ease-in-out;
   &:hover {
-    color: #3f2331;
+    color: #333;
   }
 `;
 

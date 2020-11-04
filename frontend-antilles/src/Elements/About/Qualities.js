@@ -5,7 +5,7 @@ import {
   HiChatAlt2,
 } from 'react-icons/hi';
 
-import { ProductAbout } from './Main';
+import { ProductAbout } from '../Home/Main';
 
 const { default: styled } = require('styled-components');
 
@@ -14,12 +14,7 @@ const Quality = styled.section`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 250px;
-
-  @media (max-width: 768px) {
-    margin-left: 20px;
-    margin-bottom: 590px;
-  }
+  margin: 20px;
 `;
 
 const QualityContainer = styled.div`

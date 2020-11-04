@@ -1,7 +1,5 @@
 import styled from 'styled-components';
-import MainElement from './Elements/Home/Main';
-import QualityElement from './Elements/Home/Qualities';
-import SmallContact from './Elements/Home/SmallContact';
+import MainElement from '../Elements/Home/Main';
 
 const Main = styled.div`
   display: flex;
@@ -10,19 +8,15 @@ const Main = styled.div`
 `;
 
 const Container = styled.section`
-  margin: 0px 40px;
+  margin: 0 40px;
 `;
 
 const Home = () => {
   return (
     <Main>
-      <Container>
+      <Container className="slidePage">
         <MainElement />
       </Container>
-      <Container>
-        <QualityElement />
-      </Container>
-      <SmallContact />
     </Main>
   );
 };

@@ -1,13 +1,12 @@
 import styled from 'styled-components';
+import QualityElement from '../Elements/About/Qualities';
 
-const Container = styled.section`
+const Main = styled.section`
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  margin-bottom: 150px;
 `;
 
-const ContainerWrapper = styled.div`
+const Container = styled.div`
   margin: 0px 30px;
 `;
 
@@ -22,34 +21,36 @@ const AboutText = styled.p`
 `;
 
 const Image = styled.img`
-  width: 350px;
+  width: 340px;
   height: 500px;
 `;
 
 const About = () => {
   return (
-    <Container>
-      <ContainerWrapper>
-        <Image
-          src="https://images.unsplash.com/photo-1524117304818-b4fadd3e127a"
-          alt="about"
-          title="About"
-        />
-      </ContainerWrapper>
-      <ContainerWrapper>
-        <AboutTitle>About</AboutTitle>
-        <AboutText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam
-        </AboutText>
-        <AboutText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam
-        </AboutText>
-      </ContainerWrapper>
-    </Container>
+    <>
+      <Main className="slidePage">
+        <Container>
+          <Image
+            src="https://images.unsplash.com/photo-1524117304818-b4fadd3e127a"
+            alt="about"
+            title="About"
+          />
+        </Container>
+        <Container>
+          <AboutTitle>About</AboutTitle>
+          <AboutText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam
+          </AboutText>
+          <AboutText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam
+          </AboutText>
+        </Container>
+      </Main>
+    </>
   );
 };
 
