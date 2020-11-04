@@ -8,13 +8,13 @@ export const PrimaryButton = styled.a`
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  background-color: #1c2321;
+  background-color: #212529;
   cursor: pointer;
   transition: 280ms ease-in-out;
 
   &:hover {
     background-color: #fff;
-    color: #1c2321;
+    color: #212529;
   }
 
   .icon {

@@ -12,11 +12,13 @@ const { default: styled } = require('styled-components');
 const Quality = styled.section`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   height: 250px;
 
   @media (max-width: 768px) {
     margin-left: 20px;
-    margin-bottom: 250px;
+    margin-bottom: 590px;
   }
 `;
 
@@ -25,9 +27,10 @@ const QualityContainer = styled.div`
 `;
 
 const QualityText = styled(ProductAbout)`
-  color: #291720;
+  color: #212529;
   max-width: 100%;
   font-weight: 700;
+  text-align: center;
 `;
 
 const Circle = styled.span`
@@ -36,7 +39,7 @@ const Circle = styled.span`
   width: 96px;
   height: 96px;
   border-radius: 50%;
-  background-color: #291720;
+  background-color: #212529;
 `;
 
 const StyledDelivery = styled(HiArchive)`
@@ -59,19 +62,19 @@ const QualityElement = () => {
   return (
     <Quality>
       <QualityContainer>
-        <QualityText>Entrega Rápida</QualityText>
+        <QualityText>Fast Delivery</QualityText>
         <Circle>
           <StyledDelivery color="#fff" size="3.75em" />
         </Circle>
       </QualityContainer>
       <QualityContainer>
-        <QualityText>Reembolso Facil</QualityText>
+        <QualityText>Easy Refund</QualityText>
         <Circle>
           <StyledMoney color="#fff" size="3.75em" />
         </Circle>
       </QualityContainer>
       <QualityContainer>
-        <QualityText>Site Confiavel</QualityText>
+        <QualityText>Trust System</QualityText>
         <Circle>
           <StyledShield color="#fff" size="3.75em" />
         </Circle>

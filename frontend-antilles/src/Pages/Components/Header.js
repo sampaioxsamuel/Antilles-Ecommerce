@@ -18,14 +18,14 @@ const Container = styled.div`
 `;
 
 const Logo = styled.h1`
-  color: #291720;
+  color: #212529;
   font-weight: 400;
   font-size: 3em;
   text-transform: uppercase;
 `;
 
 const HeaderLink = styled(NavLink)`
-  color: #291720;
+  color: #212529;
   margin: 0 30px;
   text-align: center;
   text-transform: lowercase;
@@ -41,7 +41,7 @@ const HeaderLink = styled(NavLink)`
     width: 0;
     height: 2px;
     margin-top: 4px;
-    background-color: #04a777;
+    background-color: #212529;
     transition: 270ms ease-in-out;
   }
 
@@ -55,7 +55,7 @@ const HeaderLink = styled(NavLink)`
     width: 100%;
     height: 2px;
     margin-top: 4px;
-    background-color: #04a777;
+    background-color: #212529;
   }
 `;
 
@@ -69,6 +69,9 @@ const Header = () => {
       </Container>
       <Container>
         <ul>
+          <HeaderLink to="/" end>
+            Home
+          </HeaderLink>
           <HeaderLink to="/products">Products</HeaderLink>
           <HeaderLink to="/about">About</HeaderLink>
           <HeaderLink to="/contact">Contact</HeaderLink>

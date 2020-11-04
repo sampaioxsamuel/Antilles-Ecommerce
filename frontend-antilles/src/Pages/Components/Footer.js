@@ -10,16 +10,17 @@ const MainFooter = styled.footer`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
-  background-color: #e3e3e3;
+  justify-content: space-evenly;
+  background-color: #dadada;
+  text-align: center;
+
   @media (max-width: 768px) {
     flex-direction: column;
   }
 `;
 
 const Container = styled.div`
-  margin: 15px 100px;
-
+  margin: 10px 30px;
   @media (max-width: 768px) {
     margin: 5px 0;
   }
@@ -27,23 +28,32 @@ const Container = styled.div`
 
 const Logo = styled.h1`
   font-size: 2em;
-  color: #291720;
+  color: #212529;
 `;
 
-const FooterLink = styled.a`
-  color: #291720;
-  margin: 12px;
-  text-align: center;
+const FooterText = styled.p`
+  color: #212529;
+  font-style: italic;
 `;
 
 const Icon = styled.a`
-  color: #291720;
-  margin: 0 7px;
+  color: #212529;
   transition: 280ms ease-in-out;
-
   &:hover {
-    color: #1a579e;
+    color: #3f2331;
   }
+`;
+
+const StyledInstagram = styled(Instagram)`
+  margin: 5px;
+`;
+
+const StyledTwitter = styled(Twitter)`
+  margin: 5px;
+`;
+
+const StyledYoutube = styled(Youtube)`
+  margin: 5px;
 `;
 
 const Footer = () => {
@@ -53,17 +63,17 @@ const Footer = () => {
         <Logo>ALS</Logo>
       </Container>
       <Container>
-        <FooterLink>some rights reserved &copy; 2020 </FooterLink>
+        <FooterText>Some rights reserved &copy; 2020 </FooterText>
       </Container>
       <Container>
         <Icon href="https://instagram.com" target="_blank">
-          <Instagram size="1.5em" />
+          <StyledInstagram size="1.5em" />
         </Icon>
         <Icon href="https://twitter.com" target="_blank">
-          <Twitter size="1.5em" />
+          <StyledTwitter size="1.5em" />
         </Icon>
         <Icon href="https://youtube.com" target="_blank">
-          <Youtube size="1.5em" />
+          <StyledYoutube size="1.5em" />
         </Icon>
       </Container>
     </MainFooter>

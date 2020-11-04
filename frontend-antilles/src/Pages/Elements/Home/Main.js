@@ -5,12 +5,12 @@ import { HiArrowRight } from 'react-icons/hi';
 const MainContainer = styled.div`
   width: 100%;
   height: 460px;
-  background-color: blue;
+  background-color: crimson;
 `;
 
 const MainContent = styled.div`
-  padding-left: 40px;
-  padding-top: 40px;
+  padding-left: 50px;
+  padding-top: 50px;
 `;
 
 const ProductTitle = styled.h2`
