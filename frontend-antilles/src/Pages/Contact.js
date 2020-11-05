@@ -1,10 +1,10 @@
-import { useEffect } from "react";
-import styled from "styled-components";
-import { SendButton } from "../Components/Button";
-import { InputContact, Message } from "../Components/Input";
+import { useEffect } from 'react';
+import styled from 'styled-components';
+import { SendButton } from '../Components/Button';
+import { InputContact, Message } from '../Components/Input';
 
 const Main = styled.div`
-  margin-bottom: 50px;
+  margin-bottom: 120px;
 `;
 
 const Container = styled.section`
@@ -14,7 +14,7 @@ const Container = styled.section`
   justify-content: center;
 `;
 
-const Title = styled.h1`
+const ContanctTitle = styled.h2`
   color: #212529;
   font-size: 2.5em;
   margin-bottom: 20px;
@@ -22,13 +22,13 @@ const Title = styled.h1`
 
 const Contact = () => {
   useEffect(() => {
-    document.title = "Antilles - Contact";
+    document.title = 'Antilles - Contact';
   }, []);
 
   return (
     <Main className="slidePage">
       <Container>
-        <Title>Contact us with the form below</Title>
+        <ContanctTitle>Contact us with the form below</ContanctTitle>
       </Container>
       <Container>
         <InputContact type="text" placeholder="Name" />
