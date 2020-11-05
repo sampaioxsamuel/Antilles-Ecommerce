@@ -1,44 +1,53 @@
 [
   {
     "id": 1,
-    "name": "Pen Vintage Gold",
+    "name": "Vintage Camera",
+    "desc": "lorem ipsum",
+    "price": 132.99,
     "img": {
-      "src": "https://images.unsplash.com/photo-1580127645995-d43fe9598711"
+      "src": "https://i.imgur.com/BwYe7OD.jpg"
     }
   },
   {
     "id": 2,
-    "name": "Pocket Watch 1989",
+    "name": "Modern Wall Clock",
+    "desc": "lorem ipsum",
+    "price": 25.0,
     "img": {
-      "src": "https://images.unsplash.com/photo-1516343951655-b04a58ad521a"
+      "src": "https://i.imgur.com/7YAS91E.jpg"
     }
   },
   {
     "id": 3,
-    "name": "Minolta SRT-101",
+    "name": "Analogic Wrist Watch",
+    "desc": "lorem ipsum",
+    "price": 50.0,
     "img": {
-      "src": "https://images.unsplash.com/photo-1426647653468-2a7a88dfb6d7"
+      "src": "https://i.imgur.com/MxGoiZK.jpg"
     }
   },
   {
     "id": 4,
-    "name": "Crosley Vintage Phone",
+    "name": "Smart Watch ",
+    "price": 250.0,
     "img": {
-      "src": "https://images.unsplash.com/photo-1571554760385-e2e33eefa030"
+      "src": "https://i.imgur.com/Mje0sTA.jpg"
     }
   },
   {
     "id": 5,
-    "name": "Audio-Technica AT-LP120",
+    "name": "Mechanical Keyboard",
+    "price": 110.0,
     "img": {
-      "src": "https://images.unsplash.com/photo-1502859064115-a1a4d0f47463"
+      "src": "https://i.imgur.com/zXY2D8T.jpg"
     }
   },
   {
     "id": 6,
-    "name": "Sankyo Super 8",
+    "name": "Headphone 7.1",
+    "price": 185.0,
     "img": {
-      "src": "https://images.unsplash.com/photo-1499932642600-b18679ab5279"
+      "src": "https://i.imgur.com/pVhYhI3.jpeg"
     }
   }
 ]

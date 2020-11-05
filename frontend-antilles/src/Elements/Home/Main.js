@@ -1,21 +1,29 @@
-import styled from 'styled-components';
-import { PrimaryButton } from '../../Components/Button';
-import { HiArrowRight } from 'react-icons/hi';
+import styled from "styled-components";
+import { PrimaryButton } from "../../Components/Button";
+import { HiArrowRight } from "react-icons/hi";
 
 const Main = styled.div`
-  width: 960px;
-  height: 600px;
-  overflow-y: hidden;
-  margin: 0 auto;
+  max-width: 100%;
+  height: 450px;
+  margin: 0 120px;
+  background-image: url("https://images.unsplash.com/photo-1496950866446-3253e1470e8e");
+  background-size: cover;
+  background-position: center;
+
+  @media (max-width: 768px) {
+    margin: 0 20px;
+  }
+
+  @media (max-width: 480px) {
+    margin: 0 auto;
+  }
 `;
 
 const Container = styled.div`
   display: flex;
-  align-items: center;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   transition: 280ms ease-in-out;
-
   &:hover {
     background-color: rgba(0, 0, 0, 0.6);
   }
@@ -25,13 +33,6 @@ const Product = styled.div`
   margin: auto 30px;
 `;
 
-const Image = styled.img`
-  height: 660px;
-  position: relative;
-  top: -600px;
-  z-index: -1;
-`;
-
 const ProductTitle = styled.h2`
   font-size: 3.5em;
   color: #fff;
@@ -39,7 +40,7 @@ const ProductTitle = styled.h2`
 `;
 
 export const ProductAbout = styled.p`
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.1em;
   color: #fff;
   z-index: 1000;
@@ -59,10 +60,6 @@ export const MainElement = () => {
           </PrimaryButton>
         </Product>
       </Container>
-      <Image
-        src="https://images.unsplash.com/photo-1496950866446-3253e1470e8e"
-        alt="promo"
-      />
     </Main>
   );
 };

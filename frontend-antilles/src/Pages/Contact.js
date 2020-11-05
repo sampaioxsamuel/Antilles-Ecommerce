@@ -1,6 +1,7 @@
-import styled from 'styled-components';
-import { SendButton } from '../Components/Button';
-import { InputContact, Message } from '../Components/Input';
+import { useEffect } from "react";
+import styled from "styled-components";
+import { SendButton } from "../Components/Button";
+import { InputContact, Message } from "../Components/Input";
 
 const Main = styled.div`
   margin-bottom: 50px;
@@ -20,6 +21,10 @@ const Title = styled.h1`
 `;
 
 const Contact = () => {
+  useEffect(() => {
+    document.title = "Antilles - Contact";
+  }, []);
+
   return (
     <Main className="slidePage">
       <Container>

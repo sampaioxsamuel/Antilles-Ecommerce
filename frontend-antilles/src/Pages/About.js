@@ -1,5 +1,6 @@
-import styled from 'styled-components';
-import QualityElement from '../Elements/About/Qualities';
+import { useEffect } from "react";
+import styled from "styled-components";
+import QualityElement from "../Elements/About/Qualities";
 
 const Main = styled.section`
   display: flex;
@@ -26,31 +27,32 @@ const Image = styled.img`
 `;
 
 const About = () => {
+  useEffect(() => {
+    document.title = "Antilles - About";
+  }, []);
   return (
-    <>
-      <Main className="slidePage">
-        <Container>
-          <Image
-            src="https://images.unsplash.com/photo-1524117304818-b4fadd3e127a"
-            alt="about"
-            title="About"
-          />
-        </Container>
-        <Container>
-          <AboutTitle>About</AboutTitle>
-          <AboutText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam
-          </AboutText>
-          <AboutText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam
-          </AboutText>
-        </Container>
-      </Main>
-    </>
+    <Main className="slidePage">
+      <Container>
+        <Image
+          src="https://images.unsplash.com/photo-1524117304818-b4fadd3e127a"
+          alt="about"
+          title="About"
+        />
+      </Container>
+      <Container>
+        <AboutTitle>About</AboutTitle>
+        <AboutText>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam
+        </AboutText>
+        <AboutText>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam
+        </AboutText>
+      </Container>
+    </Main>
   );
 };
 
