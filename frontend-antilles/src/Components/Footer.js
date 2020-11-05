@@ -1,13 +1,12 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { FaInstagram, FaFacebookF } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { FaInstagram, FaFacebookF } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const MainFooter = styled.footer`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
   padding: 20px;
 `;
 
@@ -21,7 +20,7 @@ const Container = styled.div`
 const List = styled.li`
   display: flex;
   flex-direction: column;
-  margin: 10px 60px;
+  margin: 10px 70px;
 `;
 
 const Information = styled.span`
@@ -72,14 +71,14 @@ const Footer = () => {
             <FooterTitles>menu</FooterTitles>
             <FooterLink to="/product/1">Cameras</FooterLink>
             <FooterLink to="/product/1">Watches</FooterLink>
-            <FooterLink to="/product/1">Smart Watches</FooterLink>
             <FooterLink to="/product/1">Keyboards</FooterLink>
+            <FooterLink to="/product/1">Smart Watches</FooterLink>
           </List>
           <List>
             <FooterTitles>information</FooterTitles>
             <FooterLink to="/about">FAQ</FooterLink>
-            <FooterLink to="/about">Terms And Conditions</FooterLink>
             <FooterLink to="/about">Return Policy</FooterLink>
+            <FooterLink to="/about">Terms And Conditions</FooterLink>
           </List>
           <List>
             <FooterTitles>contact</FooterTitles>
