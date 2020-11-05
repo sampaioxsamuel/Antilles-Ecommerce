@@ -22,7 +22,7 @@ const Main = styled.div`
 const Container = styled.div`
   display: flex;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   transition: 280ms ease-in-out;
   &:hover {
     background-color: rgba(0, 0, 0, 0.6);
@@ -35,6 +35,7 @@ const Product = styled.div`
 
 const ProductTitle = styled.h2`
   font-size: 3.5em;
+  text-transform: uppercase;
   color: #fff;
   z-index: 1000;
 `;
@@ -51,7 +52,7 @@ export const MainElement = () => {
     <Main>
       <Container>
         <Product>
-          <ProductTitle>Black Friday 2020</ProductTitle>
+          <ProductTitle>Vintage products is here</ProductTitle>
           <ProductAbout>
             Promotions through the entire month, with our bests products
           </ProductAbout>

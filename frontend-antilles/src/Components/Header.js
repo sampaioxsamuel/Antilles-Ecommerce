@@ -1,15 +1,17 @@
-import { NavLink, Link } from 'react-router-dom';
-import styled from 'styled-components';
+import { NavLink, Link } from "react-router-dom";
+import styled from "styled-components";
+import { FaUser } from "react-icons/fa";
 
 const MainHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 70px;
 `;
 
 const Container = styled.div`
-  margin: 10px 40px 50px 40px;
+  margin: 10px 50px;
 `;
 
 const Logo = styled.h1`
@@ -21,13 +23,13 @@ const Logo = styled.h1`
 
 const HeaderLink = styled(NavLink)`
   color: #212529;
-  margin-left: 50px;
+  margin: 0 25px;
   text-align: center;
   text-transform: lowercase;
   display: inline-block;
 
   &:after {
-    content: '';
+    content: "";
     display: block;
     width: 0;
     height: 2px;
@@ -41,7 +43,7 @@ const HeaderLink = styled(NavLink)`
   }
 
   &.active::after {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 2px;
@@ -63,6 +65,7 @@ const Header = () => {
           <HeaderLink to="/products">Products</HeaderLink>
           <HeaderLink to="/about">About</HeaderLink>
           <HeaderLink to="/contact">Contact</HeaderLink>
+          <HeaderLink to="/login">sign in</HeaderLink>
         </ul>
       </Container>
     </MainHeader>

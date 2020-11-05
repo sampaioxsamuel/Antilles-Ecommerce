@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import styled from "styled-components";
 import { PrimaryButton } from "../Components/Button";
 import { Link } from "react-router-dom";
+import { FaShoppingCart } from "react-icons/fa";
 
 const ProductContainer = styled.section`
   display: flex;
@@ -40,6 +41,12 @@ const ProductPrice = styled.p`
   }
 `;
 
+const CartIcon = styled(FaShoppingCart)`
+  position: relative;
+  top: 2px;
+  left: 9px;
+`;
+
 const Products = () => {
   const { data, loading, request } = useFetch();
 
@@ -56,11 +63,12 @@ const Products = () => {
     <ProductContainer className="slidePage">
       {data &&
         data.map((product) => (
-          <ProductLink to={`/product/${product.name}`}>
+          <ProductLink to={`/products/${product.name}`}>
             <ProductCard>
               <ProductImage src={product.img.src} alt={product.name} />
               <PrimaryButton to={`${product.id}/add-cart`}>
                 Add to Cart
+                <CartIcon size="1em" />
               </PrimaryButton>
               <ProductTitle>{product.name}</ProductTitle>
               <ProductPrice>
