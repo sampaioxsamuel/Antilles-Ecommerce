@@ -1,10 +1,10 @@
-import { useEffect } from "react";
-import styled from "styled-components";
-import QualityElement from "../Elements/About/Qualities";
+import { useEffect } from 'react';
+import styled from 'styled-components';
 
 const Main = styled.section`
   display: flex;
   justify-content: center;
+  margin-bottom: 120px;
 `;
 
 const Container = styled.div`
@@ -28,7 +28,7 @@ const Image = styled.img`
 
 const About = () => {
   useEffect(() => {
-    document.title = "Antilles - About";
+    document.title = 'Antilles - About';
   }, []);
   return (
     <Main className="slidePage">

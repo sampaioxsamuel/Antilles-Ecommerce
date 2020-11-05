@@ -8,7 +8,7 @@ const Container = styled.section`
   background-color: #212529;
   color: #fff;
   padding: 10px 0;
-  margin-top: 60px;
+  // margin-top: 60px;
 `;
 
 const ContactTitle = styled.h2`

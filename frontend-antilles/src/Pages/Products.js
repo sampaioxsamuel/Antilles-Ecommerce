@@ -1,14 +1,16 @@
-import useFetch from "../CustomHooks/useFetch";
-import { useEffect } from "react";
-import styled from "styled-components";
-import { PrimaryButton } from "../Components/Button";
-import { Link } from "react-router-dom";
-import { FaShoppingCart } from "react-icons/fa";
+import styled from 'styled-components';
+import useFetch from '../CustomHooks/useFetch';
+import { useEffect } from 'react';
+import { PrimaryButton } from '../Components/Button';
+import { Price, Title } from '../Components/Text';
+import { Link } from 'react-router-dom';
+import { FaShoppingCart } from 'react-icons/fa';
 
 const ProductContainer = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 120px;
 `;
 
 const ProductCard = styled.div`
@@ -25,16 +27,8 @@ const ProductLink = styled(Link)`
 
 const ProductImage = styled.img``;
 
-const ProductTitle = styled.p`
-  font-family: "Crimson Text", serif;
-  font-size: 1.5em;
-  color: #212529;
-`;
-
-const ProductPrice = styled.p`
-  margin-top: -15px;
-  font-weight: 700;
-  color: #212529;
+const ProductPrice = styled(Price)`
+  margin-top: -10px;
 
   span {
     margin-right: 5px;
@@ -52,8 +46,8 @@ const Products = () => {
 
   useEffect(() => {
     async function fetchProduct() {
-      document.title = "Antilles - Products";
-      await request("http://localhost:8000/products");
+      document.title = 'Antilles - Products';
+      await request('http://localhost:8000/products');
     }
     fetchProduct();
   }, [request]);
@@ -63,15 +57,15 @@ const Products = () => {
     <ProductContainer className="slidePage">
       {data &&
         data.map((product) => (
-          <ProductLink to={`/products/${product.name}`}>
+          <ProductLink key={product.id} to={`/products/${product.name}`}>
             <ProductCard>
               <ProductImage src={product.img.src} alt={product.name} />
-              <PrimaryButton to={`${product.id}/add-cart`}>
+              <PrimaryButton size="13px 40px">
                 Add to Cart
                 <CartIcon size="1em" />
               </PrimaryButton>
-              <ProductTitle>{product.name}</ProductTitle>
-              <ProductPrice>
+              <Title>{product.name}</Title>
+              <ProductPrice size="1.1em">
                 <span>$</span>
                 {product.price}
               </ProductPrice>

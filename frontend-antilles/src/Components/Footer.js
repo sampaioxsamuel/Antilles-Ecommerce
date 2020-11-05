@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import { FaInstagram, FaFacebookF } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaInstagram, FaFacebookF } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const MainFooter = styled.footer`
   display: flex;
@@ -22,18 +22,16 @@ const List = styled.li`
   display: flex;
   flex-direction: column;
   margin: 10px 60px;
-
-  span {
-    color: #212529;
-    font-size: 0.8em;
-    margin: 5px 0;
-    font-family: "Lato", sans-serif;
-  }
 `;
 
-const FooterTitles = styled.h1`
+const Information = styled.span`
+  color: #212529;
+  font-size: 0.8em;
+  margin: 5px 0;
+`;
+
+const FooterTitles = styled.h2`
   font-size: 1em;
-  font-family: "Lato", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: #111;
@@ -85,8 +83,8 @@ const Footer = () => {
           </List>
           <List>
             <FooterTitles>contact</FooterTitles>
-            <span to="/">Phone: +55 85 3262-9644</span>
-            <span to="/">Email: contact@antilles.com</span>
+            <Information>Phone: +55 85 3262-9644</Information>
+            <Information>Email: contact@antilles.com</Information>
             <div>
               <Icon href="https://facebook.com/" target="_blank">
                 <Facebook size="1.2em" />

@@ -1,10 +1,11 @@
-import { Routes, Route } from "react-router-dom";
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
-import Home from "./Pages/Home";
-import Products from "./Pages/Products";
-import Product from "./Pages/Product";
-import NotFound from "./Pages/NotFound";
+import { Routes, Route } from 'react-router-dom';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import Home from './Pages/Home';
+import Products from './Pages/Products';
+import Product from './Pages/Product';
+import Login from './Pages/Login';
+import NotFound from './Pages/NotFound';
 
 const Router = () => {
   return (
@@ -14,7 +15,7 @@ const Router = () => {
       <Route path="/products/:id" element={<Product />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/login" element={<NotFound />} />
+      <Route path="/login" element={<Login />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

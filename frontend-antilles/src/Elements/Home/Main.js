@@ -1,17 +1,17 @@
-import styled from "styled-components";
-import { PrimaryButton } from "../../Components/Button";
-import { HiArrowRight } from "react-icons/hi";
+import styled from 'styled-components';
+import { PrimaryButton } from '../../Components/Button';
+import { HiArrowRight } from 'react-icons/hi';
 
 const Main = styled.div`
   max-width: 100%;
-  height: 450px;
-  margin: 0 120px;
-  background-image: url("https://images.unsplash.com/photo-1496950866446-3253e1470e8e");
+  height: 500px;
+  margin: 0 100px;
+  background-image: url('https://images.unsplash.com/photo-1496950866446-3253e1470e8e');
   background-size: cover;
   background-position: center;
 
   @media (max-width: 768px) {
-    margin: 0 20px;
+    margin: 0 0;
   }
 
   @media (max-width: 480px) {
@@ -37,14 +37,11 @@ const ProductTitle = styled.h2`
   font-size: 3.5em;
   text-transform: uppercase;
   color: #fff;
-  z-index: 1000;
 `;
 
 export const ProductAbout = styled.p`
-  font-family: "Lato", sans-serif;
   font-size: 1.1em;
   color: #fff;
-  z-index: 1000;
 `;
 
 export const MainElement = () => {
@@ -52,11 +49,12 @@ export const MainElement = () => {
     <Main>
       <Container>
         <Product>
-          <ProductTitle>Vintage products is here</ProductTitle>
+          <ProductTitle>Vintage products</ProductTitle>
           <ProductAbout>
-            Promotions through the entire month, with our bests products
+            See our collections of vintage products, the whole month with 50%
+            promotion
           </ProductAbout>
-          <PrimaryButton to="/products">
+          <PrimaryButton size="13px 40px" to="/products">
             See Products <HiArrowRight className="icon" />
           </PrimaryButton>
         </Product>

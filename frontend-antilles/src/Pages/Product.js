@@ -1,8 +1,9 @@
-import useFetch from "../CustomHooks/useFetch";
-import { useEffect } from "react";
-import styled from "styled-components";
-import { PrimaryButton } from "../Components/Button";
-import { Link, useParams } from "react-router-dom";
+import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+/*
+import useFetch from '../CustomHooks/useFetch';
+import styled from 'styled-components';
+import { Primary } from '../Components/Button';
 
 const ProductContainer = styled.section`
   display: flex;
@@ -22,7 +23,7 @@ const ProductCard = styled.div`
 const ProductImage = styled.img``;
 
 const ProductTitle = styled.p`
-  font-family: "Crimson Text", serif;
+  font-family: 'Crimson Text', serif;
   font-size: 1.5em;
   color: #212529;
 `;
@@ -36,6 +37,7 @@ const ProductPrice = styled.p`
     margin-right: 5px;
   }
 `;
+*/
 
 const Products = () => {
   const { id } = useParams();

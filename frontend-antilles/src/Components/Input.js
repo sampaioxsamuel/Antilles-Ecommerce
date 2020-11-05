@@ -1,9 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const InputContact = styled.input`
-  text-family: "Lato", sans-serif;
+export const Input = styled.input`
+  text-family: 'Lato', sans-serif;
   color: #212529;
-  background-color: transparent;
   border: none;
   padding: 15px 5px;
   width: 450px;
@@ -16,8 +15,12 @@ export const InputContact = styled.input`
   }
 `;
 
+export const InputContact = styled(Input)`
+  background-color: transparent;
+`;
+
 export const Message = styled.textarea`
-  text-family: "Lato", sans-serif;
+  text-family: 'Lato', sans-serif;
   color: #212529;
   background-color: transparent;
   border: none;
