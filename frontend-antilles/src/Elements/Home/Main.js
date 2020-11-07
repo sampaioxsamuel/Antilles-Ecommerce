@@ -1,12 +1,12 @@
-import styled from 'styled-components';
-import { PrimaryButton } from '../../Components/Button';
-import { HiArrowRight } from 'react-icons/hi';
+import styled from "styled-components";
+import { PrimaryLink } from "../../Components/Button";
+import { HiArrowRight } from "react-icons/hi";
 
 const Main = styled.div`
   max-width: 100%;
   height: 500px;
   margin: 0 100px;
-  background-image: url('https://images.unsplash.com/photo-1496950866446-3253e1470e8e');
+  background-image: url("https://images.unsplash.com/photo-1496950866446-3253e1470e8e");
   background-size: cover;
   background-position: center;
 
@@ -54,9 +54,9 @@ export const MainElement = () => {
             See our collections of vintage products, the whole month with 50%
             promotion
           </ProductAbout>
-          <PrimaryButton size="13px 40px" to="/products">
+          <PrimaryLink size="13px 40px" to="/products">
             See Products <HiArrowRight className="icon" />
-          </PrimaryButton>
+          </PrimaryLink>
         </Product>
       </Container>
     </Main>

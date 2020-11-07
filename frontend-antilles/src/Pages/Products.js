@@ -6,7 +6,7 @@ import { Price, Title } from '../Components/Text';
 import { Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
 
-const ProductContainer = styled.section`
+const ProductContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -15,13 +15,12 @@ const ProductContainer = styled.section`
 
 const ProductCard = styled.div`
   display: flex;
-  position: relative;
   flex-direction: column;
   text-align: center;
 `;
 
 const ProductLink = styled(Link)`
-  margin: 20px 50px;
+  margin: 20px 50px 100px 50px;
   transition: 400ms ease-in-out;
 `;
 
@@ -57,14 +56,14 @@ const Products = () => {
     <ProductContainer className="slidePage">
       {data &&
         data.map((product) => (
-          <ProductLink key={product.id} to={`/products/${product.name}`}>
+          <ProductLink key={product.id} to={`/products/${product.id}`}>
             <ProductCard>
-              <ProductImage src={product.img.src} alt={product.name} />
+              <ProductImage src={product.imgs[0]} alt={product.name} />
               <PrimaryButton size="13px 40px">
                 Add to Cart
                 <CartIcon size="1em" />
               </PrimaryButton>
-              <Title>{product.name}</Title>
+              <Title margin="1rem">{product.name}</Title>
               <ProductPrice size="1.1em">
                 <span>$</span>
                 {product.price}

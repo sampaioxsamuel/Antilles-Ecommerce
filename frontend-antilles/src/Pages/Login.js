@@ -1,17 +1,16 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import { SendButton } from '../Components/Button';
-import { Input } from '../Components/Input';
-import { PrimaryLink, TitleLg } from '../Components/Text';
+import styled from "styled-components";
+import { SendButton } from "../Components/Button";
+import { Input } from "../Components/Input";
+import { PrimaryLinkText, TitleLg } from "../Components/Text";
 
 const Main = styled.section`
-  max-width: 500px;
-  margin: 0 auto;
+  width: 500px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  margin: 0 auto 150px;
 `;
 
 const Container = styled.div`
@@ -44,11 +43,13 @@ const Login = () => {
         <LoginInput type="text" placeholder="Username" />
         <LoginInput type="password" placeholder="Password" />
         <Buttons>
-          <SendButton to="/login?id">Sign In</SendButton>
-          <PrimaryLink mt to="/register">
+          <SendButton to="/login?auth=">Sign In</SendButton>
+          <PrimaryLinkText mt to="/register">
             Create Account
-          </PrimaryLink>
-          <PrimaryLink to="/reset-password">Forgot your password?</PrimaryLink>
+          </PrimaryLinkText>
+          <PrimaryLinkText to="/reset-password">
+            Forgot your password?
+          </PrimaryLinkText>
         </Buttons>
       </Container>
     </Main>
