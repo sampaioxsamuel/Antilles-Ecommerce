@@ -3,13 +3,13 @@ import styled from 'styled-components';
 import MainElement from '../Elements/Home/Main';
 import HightlightElement from '../Elements/Home/Hightlight';
 
-export const Main = styled.section`
+export const Main = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 `;
 
-export const Container = styled.section``;
+export const Container = styled.div``;
 
 const Home = () => {
   useEffect(() => {
@@ -17,11 +17,9 @@ const Home = () => {
   }, []);
 
   return (
-    <Main>
-      <Container className="slidePage">
-        <MainElement />
-        <HightlightElement />
-      </Container>
+    <Main className="slidePage">
+      <MainElement />
+      <HightlightElement />
     </Main>
   );
 };

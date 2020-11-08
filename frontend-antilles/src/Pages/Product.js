@@ -76,7 +76,7 @@ const CartButton = styled(SendButton)`
 
   &:hover {
     background-color: #212529;
-    color: #dee2e6;
+    color: #fff;
   }
 
   @media (max-width: 960px) {
@@ -97,12 +97,14 @@ const Products = () => {
 
   useEffect(() => {
     async function fetchProduct() {
-      document.title = 'Antilles - Products';
-      await request(`http://localhost:8000/products/${id}`);
+      document.title = `${id
+        .replace('-', ' ')
+        .replace('-', ' ')
+        .toUpperCase()} - Antilles`;
+      await request(`http://localhost:3333/products/${id}`);
     }
     fetchProduct();
   }, [request, id]);
-  console.log(data);
 
   if (loading) return null;
   return (

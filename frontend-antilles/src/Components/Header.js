@@ -66,7 +66,7 @@ const Header = () => {
         <HeaderLink to="/products">Products</HeaderLink>
         <HeaderLink to="/about">About</HeaderLink>
         <HeaderLink to="/contact">Contact</HeaderLink>
-        <HeaderLink to="/login">sign in</HeaderLink>
+        <HeaderLink to="/login">Login</HeaderLink>
       </Container>
     </MainHeader>
   );

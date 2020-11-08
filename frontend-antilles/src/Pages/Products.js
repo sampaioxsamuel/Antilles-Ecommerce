@@ -46,7 +46,7 @@ const Products = () => {
   useEffect(() => {
     async function fetchProduct() {
       document.title = 'Antilles - Products';
-      await request('http://localhost:8000/products');
+      await request('http://localhost:3333/products');
     }
     fetchProduct();
   }, [request]);

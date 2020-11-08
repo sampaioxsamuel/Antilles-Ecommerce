@@ -1,10 +1,10 @@
-import styled from "styled-components";
-import { SendButton } from "../Components/Button";
-import { Input } from "../Components/Input";
-import { PrimaryLinkText, TitleLg } from "../Components/Text";
+import styled from 'styled-components';
+import { SendButton } from '../Components/Button';
+import { Input } from '../Components/Input';
+import { PrimaryLinkText, TitleLg } from '../Components/Text';
 
 const Main = styled.section`
-  width: 500px;
+  width: 400px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -19,20 +19,16 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const LoginInput = styled(Input)`
-  width: 100%;
-
-  &:focus::placeholder {
-    color: #fff;
-  }
-`;
-
 const Buttons = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 10px;
+
+  a {
+    margin: 10px 0;
+  }
 `;
 
 const Login = () => {
@@ -40,13 +36,11 @@ const Login = () => {
     <Main className="slidePage">
       <TitleLg>Login</TitleLg>
       <Container>
-        <LoginInput type="text" placeholder="Username" />
-        <LoginInput type="password" placeholder="Password" />
+        <Input type="text" placeholder="Username" />
+        <Input type="password" placeholder="Password" />
         <Buttons>
           <SendButton to="/login?auth=">Sign In</SendButton>
-          <PrimaryLinkText mt to="/register">
-            Create Account
-          </PrimaryLinkText>
+          <PrimaryLinkText to="/register">Create Account</PrimaryLinkText>
           <PrimaryLinkText to="/reset-password">
             Forgot your password?
           </PrimaryLinkText>

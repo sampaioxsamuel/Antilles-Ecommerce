@@ -19,6 +19,6 @@ app.get("/products/:id", (request, response) => {
   response.json(client);
 });
 
-app.listen(8000, () => {
-  console.log("server is running on 8000 port");
+app.listen(3333, () => {
+  console.log("server is running on 3333 port");
 });

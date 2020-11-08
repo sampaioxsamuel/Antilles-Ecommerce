@@ -33,18 +33,15 @@ export const PrimaryLinkText = styled(Link)`
   &:hover {
     color: #444;
   }
-
-  ${({ marginTop }) => `
-    margin-top: 30px;
-  `}
 `;
 
 export const Logo = styled.h1`
   color: #212529;
   font-weight: 400;
   font-size: 3em;
+  transition: 480ms ease-in-out;
 
   &:hover {
-    color: #444;
+    opacity: 0.7;
   }
 `;

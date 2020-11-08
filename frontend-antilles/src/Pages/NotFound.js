@@ -1,7 +1,9 @@
+import { TitleLg } from '../Components/Text';
+
 const NotFound = () => {
   return (
-    <div>
-      <h1>404 - Page not found</h1>
+    <div style={{ margin: '40px' }} className="slidePage">
+      <TitleLg>404 - Page not found :( </TitleLg>
     </div>
   );
 };

@@ -5,7 +5,7 @@ export const Input = styled.input`
   color: #212529;
   border: none;
   padding: 15px 5px;
-  width: 450px;
+  width: 400px;
   margin: 20px 0;
   border-bottom: 1px solid #212529;
 
@@ -26,7 +26,7 @@ export const Message = styled.textarea`
   border: none;
   border-bottom: 1px solid #212529;
   padding: 15px 5px;
-  width: 450px;
+  width: 400px;
   margin: 25px 0;
   transition: 480ms ease-in-out;
 

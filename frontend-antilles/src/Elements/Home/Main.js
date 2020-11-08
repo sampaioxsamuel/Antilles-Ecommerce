@@ -1,12 +1,12 @@
-import styled from "styled-components";
-import { PrimaryLink } from "../../Components/Button";
-import { HiArrowRight } from "react-icons/hi";
+import styled from 'styled-components';
+import { PrimaryLink } from '../../Components/Button';
+import { HiArrowRight } from 'react-icons/hi';
 
 const Main = styled.div`
   max-width: 100%;
   height: 500px;
   margin: 0 100px;
-  background-image: url("https://images.unsplash.com/photo-1496950866446-3253e1470e8e");
+  background-image: url('https://images.unsplash.com/photo-1496950866446-3253e1470e8e');
   background-size: cover;
   background-position: center;
 
@@ -31,6 +31,10 @@ const Container = styled.div`
 
 const Product = styled.div`
   margin: auto 30px;
+
+  a {
+    margin: 15px 0;
+  }
 `;
 
 const ProductTitle = styled.h2`
@@ -42,6 +46,7 @@ const ProductTitle = styled.h2`
 export const ProductAbout = styled.p`
   font-size: 1.1em;
   color: #fff;
+  margin: 10px 0;
 `;
 
 export const MainElement = () => {

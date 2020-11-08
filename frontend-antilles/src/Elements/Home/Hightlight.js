@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const Section = styled.section`
+const Container = styled.div`
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +25,7 @@ const Camera = styled.div`
   }
 `;
 
-const Grid = styled.section`
+const Grid = styled.div`
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -83,7 +83,7 @@ const Title = styled.h2`
 
 export const HightlightElement = () => {
   return (
-    <Section>
+    <Container>
       <Camera>
         <Link to="/products/Vintage Camera">
           <Hover>
@@ -107,7 +107,7 @@ export const HightlightElement = () => {
           </Link>
         </Watch>
       </Grid>
-    </Section>
+    </Container>
   );
 };
 
