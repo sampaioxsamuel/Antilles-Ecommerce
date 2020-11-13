@@ -1,10 +1,10 @@
-import styled from 'styled-components';
-import useFetch from '../CustomHooks/useFetch';
-import { useEffect } from 'react';
-import { SendButton } from '../Components/Button';
-import { Price, Title } from '../Components/Text';
-import { useParams } from 'react-router-dom';
-import { FaShoppingCart } from 'react-icons/fa';
+import styled from "styled-components";
+import useFetch from "../CustomHooks/useFetch";
+import { useEffect } from "react";
+import { SendButton } from "../Components/Button";
+import { Price, Title } from "../Components/Text";
+import { useParams } from "react-router-dom";
+import { FaShoppingCart } from "react-icons/fa";
 
 const Product = styled.div`
   display: flex;
@@ -45,13 +45,9 @@ const ProductTitle = styled(Title)`
 `;
 
 const ProductImage = styled.img`
-  width: 100%;
-  margin-right: 50px;
+  width: 90%;
+  margin-right: 150px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.12);
-
-  @media (max-width: 960px) {
-    margin-right: 0;
-  }
 `;
 
 const ProductDetail = styled.p`
@@ -98,8 +94,8 @@ const Products = () => {
   useEffect(() => {
     async function fetchProduct() {
       document.title = `${id
-        .replace('-', ' ')
-        .replace('-', ' ')
+        .replace("-", " ")
+        .replace("-", " ")
         .toUpperCase()} - Antilles`;
       await request(`http://localhost:3333/products/${id}`);
     }
