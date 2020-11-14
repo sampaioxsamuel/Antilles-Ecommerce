@@ -33,9 +33,10 @@ const HeaderLink = styled(NavLink)`
   &:after {
     content: '';
     display: block;
+    margin: 0 auto;
     width: 0;
     height: 2px;
-    margin-top: 4px;
+    margin-top: 6px;
     background-color: #212529;
     transition: 270ms ease-in-out;
   }
@@ -49,7 +50,7 @@ const HeaderLink = styled(NavLink)`
     display: block;
     width: 100%;
     height: 2px;
-    margin-top: 4px;
+    margin-top: 6px;
     background-color: #212529;
   }
 `;

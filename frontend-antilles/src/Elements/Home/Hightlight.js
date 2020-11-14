@@ -85,7 +85,7 @@ export const HightlightElement = () => {
   return (
     <Container>
       <Camera>
-        <Link to="/products/Vintage Camera">
+        <Link to="/products/vintage-camera">
           <Hover>
             <Title>Cameras</Title>
           </Hover>
@@ -93,14 +93,14 @@ export const HightlightElement = () => {
       </Camera>
       <Grid>
         <Headphone>
-          <Link to="/products/smartwatch">
+          <Link to="/products/smart-watch">
             <Hover>
               <Title>Watches</Title>
             </Hover>
           </Link>
         </Headphone>
         <Watch>
-          <Link to="/products/smartwatch">
+          <Link to="/products/headphone-7-1">
             <Hover>
               <Title>Headphones</Title>
             </Hover>

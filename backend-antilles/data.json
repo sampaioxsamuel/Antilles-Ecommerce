@@ -5,8 +5,8 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu",
     "price": 132.99,
     "imgs": {
-      "0": "https://i.imgur.com/BwYe7OD.jpg",
-      "1": "https://i.imgur.com/OL2k5sK.jpg"
+      "0": "https://antillesnodeapp.herokuapp.com/src/img/thumb/1.jpeg",
+      "1": "https://antillesnodeapp.herokuapp.com/src/img/product/1.jpg"
     }
   },
   {
@@ -15,8 +15,8 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu",
     "price": 25.99,
     "imgs": {
-      "0": "https://i.imgur.com/7YAS91E.jpg",
-      "1": "https://i.imgur.com/aWvTLGh.jpg"
+      "0": "https://antillesnodeapp.herokuapp.com/src/img/thumb/2.jpeg",
+      "1": "https://antillesnodeapp.herokuapp.com/src/img/product/2.jpg"
     }
   },
   {
@@ -25,8 +25,8 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu",
     "price": 55.99,
     "imgs": {
-      "0": "https://i.imgur.com/MxGoiZK.jpg",
-      "1": "https://i.imgur.com/rxU69P6.jpg"
+      "0": "https://antillesnodeapp.herokuapp.com/src/img/thumb/3.jpeg",
+      "1": "https://antillesnodeapp.herokuapp.com/src/img/product/3.jpg"
     }
   },
   {
@@ -35,18 +35,18 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu",
     "price": 259.99,
     "imgs": {
-      "0": "https://i.imgur.com/Mje0sTA.jpg",
-      "1": "https://i.imgur.com/FmdpFWI.jpg"
+      "0": "https://antillesnodeapp.herokuapp.com/src/img/thumb/4.jpeg",
+      "1": "https://antillesnodeapp.herokuapp.com/src/img/product/4.jpg"
     }
   },
   {
-    "id": "mechanical-keyboard",
-    "name": "Mechanical Keyboard",
+    "id": "keyboard-minimalist",
+    "name": "Keyboard Minimalist",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu",
     "price": 110.99,
     "imgs": {
-      "0": "https://i.imgur.com/zXY2D8T.jpg",
-      "1": "https://i.imgur.com/X8EaYBX.jpg"
+      "0": "https://antillesnodeapp.herokuapp.com/src/img/thumb/5.jpeg",
+      "1": "https://antillesnodeapp.herokuapp.com/src/img/product/5.jpg"
     }
   },
   {
@@ -55,8 +55,8 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu",
     "price": 185.99,
     "imgs": {
-      "0": "https://i.imgur.com/pVhYhI3.jpeg",
-      "1": "https://i.imgur.com/1ypIdaJ.jpg"
+      "0": "https://antillesnodeapp.herokuapp.com/src/img/thumb/6.jpeg",
+      "1": "https://antillesnodeapp.herokuapp.com/src/img/product/6.jpg"
     }
   }
 ]

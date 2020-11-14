@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 const { default: styled } = require('styled-components');
 
-export const PrimaryLink = styled(Link)`
+export const PrimaryButtonLink = styled(Link)`
   display: inline-block;
   padding: ${({ size }) => size};
   border: none;
@@ -26,7 +26,7 @@ export const PrimaryLink = styled(Link)`
 
 export const PrimaryButton = styled.button`
   display: inline-block;
-  padding: ${({ size }) => size};
+  padding: ${({ size }) => size || '10px 30px'};
   border: none;
   color: #fff;
   font-family: 'Lato', sans-serif;
@@ -49,8 +49,8 @@ export const PrimaryButton = styled.button`
   }
 `;
 
-export const SendButton = styled(PrimaryLink)`
-  padding: 10px 40px;
+export const SendButton = styled(PrimaryButtonLink)`
+  padding: ${({ size }) => size || '10px 50px'};
 
   &:hover {
     background-color: #6c757d;

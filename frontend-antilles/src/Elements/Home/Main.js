@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { PrimaryLink } from '../../Components/Button';
+import { PrimaryButtonLink } from '../../Components/Button';
 import { HiArrowRight } from 'react-icons/hi';
 
 const Main = styled.div`
@@ -59,9 +59,9 @@ export const MainElement = () => {
             See our collections of vintage products, the whole month with 50%
             promotion
           </ProductAbout>
-          <PrimaryLink size="13px 40px" to="/products">
+          <PrimaryButtonLink size="13px 40px" to="/products">
             See Products <HiArrowRight className="icon" />
-          </PrimaryLink>
+          </PrimaryButtonLink>
         </Product>
       </Container>
     </Main>

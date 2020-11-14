@@ -1,11 +1,13 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
-const data = require('./data.json');
 const cors = require('cors');
+
+const data = require('./data.json');
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static(__dirname + '/'));
 
 app.listen(port, () => {
   console.log(`server is running on ${port} port`);

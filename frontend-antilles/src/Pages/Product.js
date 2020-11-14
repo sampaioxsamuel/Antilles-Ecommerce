@@ -97,7 +97,7 @@ const Products = () => {
         .replace("-", " ")
         .replace("-", " ")
         .toUpperCase()} - Antilles`;
-      await request(`http://localhost:3333/products/${id}`);
+      await request(`https://antillesnodeapp.herokuapp.com/products/${id}`);
     }
     fetchProduct();
   }, [request, id]);
@@ -118,7 +118,6 @@ const Products = () => {
               Add to Cart
               <BagIcon size="1.1em" />
             </CartButton>
-            {/* <SendButton to={`/cart?=${data.id}`}>Add to cart</SendButton> */}
           </ContainerDetails>
         </>
       )}

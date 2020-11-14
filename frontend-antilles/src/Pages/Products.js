@@ -1,10 +1,10 @@
-import styled from 'styled-components';
-import useFetch from '../CustomHooks/useFetch';
-import { useEffect } from 'react';
-import { PrimaryButton } from '../Components/Button';
-import { Price, Title } from '../Components/Text';
-import { Link } from 'react-router-dom';
-import { FaShoppingCart } from 'react-icons/fa';
+import styled from "styled-components";
+import useFetch from "../CustomHooks/useFetch";
+import { useEffect } from "react";
+import { PrimaryButton } from "../Components/Button";
+import { Price, Title } from "../Components/Text";
+import { Link } from "react-router-dom";
+import { FaShoppingCart } from "react-icons/fa";
 
 const ProductContainer = styled.div`
   display: flex;
@@ -45,8 +45,8 @@ const Products = () => {
 
   useEffect(() => {
     async function fetchProduct() {
-      document.title = 'Antilles - Products';
-      await request('http://localhost:3333/products');
+      document.title = "Antilles - Products";
+      await request("https://antillesnodeapp.herokuapp.com/products");
     }
     fetchProduct();
   }, [request]);
